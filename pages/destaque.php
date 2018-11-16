@@ -1,9 +1,5 @@
 <?php
-<<<<<<< HEAD
   include ('../common/init.php');
-=======
-  
->>>>>>> 40e23e7b49f8e171261a6b8f3e6dd5ee28858e41
 ?>
 <!DOCTYPE html>
 <html>
