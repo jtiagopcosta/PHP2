@@ -1,5 +1,7 @@
 <?php
-  include ('../common/init.php');
+ 
+  include_once ('./../common/init.php');
+  //include_once ($BASE_DIR . 'database/tweets.php');
 ?>
 <!DOCTYPE html>
 <html>
@@ -7,22 +9,14 @@
     <meta charset="utf-8" />
     
     <title>Page Title</title>
-    <link rel="stylesheet" type="text/css"  href="{$BASE_DIR}css/style.css" />
+        <link rel="stylesheet" type="text/css"  href="<?={$BASE_URL}?>/css/style.css">
 </head>
+
 <body>
     olá
     <div id="tres">
         QUATRO
     </div>
-
-
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-
-</head>
-<body>
-    olá
 
 </body>
 </html>
