@@ -1,10 +1,101 @@
-.body{
-    width: 65em;
+body{
+    font-family: "Trebuchet MS";
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #ffffff;
+}
+
+.main_container{
+    width: 60em;
     margin-left: auto;
     margin-right: auto;
-    background-color: black;
+    background-color: white;
 }
-#tres{
+.container{
+    display:grid;
+    background-color: transparent;
+    grid-template-columns: 1fr 10em;
+    grid-template-rows: 12em 3em auto auto;
+}
+.header{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    text-align: center;
+    margin: 2px;
+    padding: 1em;
+    border-radius: 5px;
+    background-image: url(../img/title.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menu{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    background-color: #404040;
+    margin: 2px;
+    border-radius: 5px;
+    position: sticky;
+    top: 0;
+    border-style: groove;
+	border-width: 2px;
+	border-color: #ffffff;
+    border-radius: 4px; 
+    display: grid;
+    grid-template-columns: 6em 6em 6em 6em 1fr 6em;
+    grid-template-rows: auto;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1em;
+    padding-left: 1em;
+}
+.destaques {
+    grid-column: 1;
+}
+  
+.filmes {
+    grid-column: 2;
+}
+
+.recent{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    background-color: #404040;
+    margin: 2px;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1em;
+}
+.image_recent{
     width: 10em;
-    background-color: blueviolet;
+    height: 15em;
+    border-style: groove;
+	border-width: 2px;
+	border-color: #ffffff;
+    border-radius: 4px;   
+    margin: 0.5em;
+}
+.foot{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    background-color: #84A174;
+    color: black;
+    text-align: center;
+    margin: 2px;
+    padding: 1em;
+    border-radius: 5px;
+}
+.top{
+    height: 2em;
+    background-color: #404040;
+    margin-bottom: 1em;
 }
