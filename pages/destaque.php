@@ -22,13 +22,19 @@
                 <div class="header">
                     Cinéfilos
                 </div>
-                <nav>
-                    <ul>
-                        <li><a href="#">Em destaque</a></li>
-                        <li><a href="#">Filmes</a></li>
-                        <li><a href="#">Inserir</a></li>
-                    </ul>
-                </nav>
+                <div class="menu">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Em destaque</a></li>
+                            <li><a href="#">Filmes</a></li>
+                            <li><a href="#">Inserir</a></li>
+                        </ul>
+                    </nav>
+                    <div class="search">
+                        Pesquisa
+                    </div>
+                </div>
+                
                 <div class="recent">
                     <img class="image_recent" src="<?=$BASE_URL?>/img/lock.jpg">
                     <img class="image_recent" src="<?=$BASE_URL?>/img/john.jpg">
