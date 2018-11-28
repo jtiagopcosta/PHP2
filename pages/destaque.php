@@ -25,10 +25,8 @@
                     <img class="image_recent" src="<?=$BASE_URL?>/img/donnie.jpg">
 
                 </div>
-                <div class="foot">
-                    oito
-                </div>
-
+                
+                <?php include('footer.php') ?>
             </div>
         </div>
     </body>
