@@ -7,5 +7,4 @@
 
   include_once($BASE_DIR . '/lib/smarty/Smarty.class.php');
   $smarty = new Smarty;
-
 ?>
