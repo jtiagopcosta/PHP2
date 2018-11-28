@@ -1,33 +1,8 @@
 <?php
  
   include_once ('./../common/init.php');
-  //include_once ($BASE_DIR . 'database/tweets.php');
+                    
+  $smarty->display('pages/destaque.tpl'); 
 ?>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        
-        <title>Page Title</title>
-        <link rel="stylesheet" type="text/css"  href="<?=$BASE_URL?>/css/style.css">
-    </head>
-
-    <body>
-    <?php include('header.php') ?>        
                 
-                <div class="recent">
-                    <img class="image_recent" src="<?=$BASE_URL?>/img/lock.jpg">
-                    <img class="image_recent" src="<?=$BASE_URL?>/img/john.jpg">
-                    <img class="image_recent" src="<?=$BASE_URL?>/img/fight.jpg">
-                    <img class="image_recent" src="<?=$BASE_URL?>/img/baby.jpg">
-                    <img class="image_recent" src="<?=$BASE_URL?>/img/pulp.jpg">
-                    <img class="image_recent" src="<?=$BASE_URL?>/img/drive.jpg">
-                    <img class="image_recent" src="<?=$BASE_URL?>/img/donnie.jpg">
-
-                </div>
-                
-                <?php include('footer.php') ?>
-            </div>
-        </div>
-    </body>
-</html>
+         
