@@ -9,7 +9,7 @@
                     <img class="image_recent" src="{$BASE_URL}/img/drive.jpg">
                     <img class="image_recent" src="{$BASE_URL}/img/donnie.jpg">
 
-                </div>
+</div>
 
                 
 {include file='common/footer.tpl'}
