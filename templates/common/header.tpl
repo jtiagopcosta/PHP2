@@ -10,7 +10,6 @@
     <body>
     <header>
         <div class="top">
-<<<<<<< HEAD
             <section id="login">
             <form action="{$BASE_URL}actions/users/login.php" method="post">
                 <input type="text" placeholder="username" name="username">
@@ -37,7 +36,6 @@
                     <div class="search">
                         Pesquisa
                     </div>
-=======
         <section id="login">
         <form action="{$BASE_URL}/actions/users/login.php" method="post">
             <input type="text" placeholder="username" name="username">
@@ -46,7 +44,6 @@
             <a href="{$BASE_URL}/pages/users/register.php">Register</a>
         </form>
         </section>
->>>>>>> 5056b7fd178711aa03a7685e175b48366711e25a
                 </div>
 
                 <div class="main_container">
