@@ -1,6 +1,6 @@
 <?php
   $BASE_DIR = dirname(__DIR__);
-  $BASE_URL = 'https://paginas.fe.up.pt/~up201803231/trabalhosSiem/newpage/php2';
+  $BASE_URL = 'https://gnomo.fe.up.pt/~up201803231/trabalhosSiem/newpage/php2';
 
   $conn = new PDO('pgsql:host=db.fe.up.pt; dbname=siem1818', 'siem1818', 'CMHTnbDy');
   $conn->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
