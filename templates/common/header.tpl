@@ -28,7 +28,7 @@
                     <nav>
                         <ul>
                             <li><a href="#">Em destaque</a></li>
-                            <li><a href="#">Filmes</a></li>
+                            <li><a href="{$BASE_URL}/pages/filmes.php">Filmes</a></li>
                             <li><a href="#">Inserir</a></li>
                         </ul>
                     </nav>
