@@ -194,6 +194,7 @@ body > header section{
 
   }
 
+<<<<<<< HEAD
   body > header .username {
     margin: 1em;
   }
@@ -222,3 +223,40 @@ body > header section{
     background-color: #9F9;
     color: #333;
   }
+=======
+.filmes{
+    grid-column: 1 / 4;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-template-rows: auto;
+    grid-template-columns: 35em 0.5em 1fr;
+    display: grid;
+    margin: 2px;
+}
+
+/*lista de filmes existentes na base de dados*/
+.list{
+    grid-column: 1 / 2;
+    grid-row: 1;
+    
+}
+
+/*filtros*/
+.generos{
+    background-color: #404040;
+    grid-column: 3 / 3;
+    grid-row: 1;
+    border-radius: 5px;
+    padding: 1em;
+    overflow: hidden;
+    height: 1%;
+}
+
+.filme{
+    border-radius: 5px;
+    padding: 1em;
+    overflow: hidden;
+    height: 1%;
+    background-color: #404040;
+}
+>>>>>>> a299a9126044018d40e3a20eadd50ca1991efa4b
