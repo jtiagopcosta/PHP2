@@ -208,9 +208,7 @@ body > header section{
 .list{
     grid-column: 1 / 2;
     grid-row: 1;
-    background-color: #404040;
-    border-radius: 5px;
-    padding: 1em;
+    
 }
 
 /*filtros*/
@@ -222,4 +220,12 @@ body > header section{
     padding: 1em;
     overflow: hidden;
     height: 1%;
+}
+
+.filme{
+    border-radius: 5px;
+    padding: 1em;
+    overflow: hidden;
+    height: 1%;
+    background-color: #404040;
 }
