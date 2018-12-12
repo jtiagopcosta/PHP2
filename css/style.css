@@ -163,7 +163,7 @@ body > header section{
       color: rgb(253, 252, 252);
       box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   }
-
+ /*Página de registro*/
   #register {
     width: 20em;
     margin: 0 auto;
@@ -192,4 +192,33 @@ body > header section{
     color: rgb(253, 252, 252);
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 
+  }
+
+  body > header .username {
+    margin: 1em;
+  }
+
+  /*Mensagens de erro/sucesso*/
+  #messages {
+    width: 40em;
+  }
+  #messages {
+    width: 40em;
+    margin: 0 auto;
+  }
+  
+  #messages div {
+    padding: 1em;  
+    margin-top: 1em;
+    border-radius: 2em;
+  }
+  
+  #messages .error {
+    background-color: #F99;
+    color: #333;
+  }
+
+  #messages .success {
+    background-color: #9F9;
+    color: #333;
   }

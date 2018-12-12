@@ -7,6 +7,9 @@
   $password = $_POST['password'];
 
   createUser($username, $realname, $password);
+
+  $_SESSION['success_messages'][] = 'User registered successfully';  
+  header("Location: $BASE_URL");
   
-  //header("Location: $BASE_URL");
+  header('Location: ' . $_SERVER['HTTP_REFERER']);
 ?>
