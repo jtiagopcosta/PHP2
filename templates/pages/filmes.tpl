@@ -1,17 +1,30 @@
 
 {include file='common/header.tpl'}
+
 <div class="filmes">
     <div class="list">
-    {foreach $filmes as $filme}
-    <div class="filme">
-    <h1>{$filme.nome}<h1>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et velit arcu. Sed lacinia nulla et risus finibus lacinia nec nec orci. Morbi sed mauris quis felis tincidunt maximus. Vestibulum mollis aliquam quam, eu consectetur lectus porta id. Donec quis eros sed magna vestibulum ornare vel quis est. Nulla venenatis diam quis dolor pulvinar porta. In viverra purus non lectus dapibus mattis. Duis sodales nisl nec massa laoreet, eu lacinia justo tincidunt. Vivamus in ultricies lectus. Etiam orci risus, posuere sit amet leo eget, vulputate dapibus elit. Proin a lectus enim. Mauris vitae ipsum odio. Suspendisse tincidunt sem nec magna porttitor lacinia. Duis non fringilla purus. 
-    </div>
-    {/foreach}
-        
+        {foreach $filmes as $filme}
+            
+            <div class="filme">
+            {*<img class="pic" src="{$BASE_DIR}/img/{$filme.imagem}">*}
+            <img class="pic" src="{$BASE_URL}/img/donnie.jpg">
+            <span class="nome"> {$filme.nome}</span><br/>
+            <span > {$filme.genero}</span><br/>
+            <p><span class="p"> Realizador:</span> {$filme.autor}</p> 
+            <p><span class="p"> Elenco:</span> {$filme.elenco}<p>
+           {*<p><span class="p"> Descrição:</span> <span class="texto">{$filme.descricao}</span></p>*}
+            </div>
+        {/foreach}
     </div>
     <div class="generos">
     Lorem ipsum dolor sit amet
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
     </div>
+
 </div>
 {include file='common/footer.tpl'}

@@ -194,7 +194,6 @@ body > header section{
 
   }
 
-<<<<<<< HEAD
   body > header .username {
     margin: 1em;
   }
@@ -223,21 +222,20 @@ body > header section{
     background-color: #9F9;
     color: #333;
   }
-=======
+  
 .filmes{
-    grid-column: 1 / 4;
+    grid-column: 1 / 3;
     grid-row-start: 3;
     grid-row-end: 3;
-    grid-template-rows: auto;
-    grid-template-columns: 35em 0.5em 1fr;
     display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 45em 0.5em 1fr;
     margin: 2px;
 }
 
 /*lista de filmes existentes na base de dados*/
 .list{
     grid-column: 1 / 2;
-    grid-row: 1;
     
 }
 
@@ -245,7 +243,6 @@ body > header section{
 .generos{
     background-color: #404040;
     grid-column: 3 / 3;
-    grid-row: 1;
     border-radius: 5px;
     padding: 1em;
     overflow: hidden;
@@ -254,9 +251,34 @@ body > header section{
 
 .filme{
     border-radius: 5px;
+    margin-bottom: 0.5em;
     padding: 1em;
-    overflow: hidden;
-    height: 1%;
     background-color: #404040;
 }
->>>>>>> a299a9126044018d40e3a20eadd50ca1991efa4b
+
+.filme .nome{
+    font-weight: bold;
+    color:#e65c00;
+    font-size: 2em;
+
+}
+.filme .p{
+    font-weight: bold;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+.filme .texto{
+    font-size: 0.8em;
+}
+
+
+.filme .pic{
+    width:20%;
+	height: auto;
+	float: left;
+	border-style: groove;
+	border-width: 2px;
+	border-color: #ffffff;
+	border-radius: 4px;
+	margin: 1em;
+}
