@@ -9,7 +9,7 @@
 
     <body>
     <header>
-        
+        <div class='top'>
         <section id="login">
             <form action="{$BASE_URL}/actions/users/login.php" method="post">
                 <input type="text" placeholder="username" name="username">
@@ -18,6 +18,7 @@
                 <a href="{$BASE_URL}/pages/users/register.php">Register</a>
             </form>
         </section>
+        </div>
             <div class="main_container">
                 <div class="container">
                     
@@ -29,7 +30,12 @@
                             <ul>
                                 <li><a href="#">Em destaque</a></li>
                                 <li><a href="#">Filmes</a></li>
+
+                        <!-- Autorizador -->
+                                {if $_SESSION['tipo']=='admin'}
                                 <li><a href="#">Inserir</a></li>
+                                {/if}
+                                
                             </ul>
                         </nav>
                         <div class="search">
