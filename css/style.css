@@ -13,7 +13,7 @@ body{
     background-color: #c7c7c7;
 }
 .container{
-    display:grid;
+    display: grid;
     background-color: transparent;
     grid-template-columns: 1fr 10em;
     grid-template-rows: 12em auto auto auto;
@@ -124,106 +124,117 @@ nav a:hover{
 .top{
     height: 2.5em;
     background-color: #404040;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
+    weight: 100%;
 }
+body > header a {
+    color: white;
+    text-decoration: none;
+    transition:  color 1s; 
+    float: initial; 
+    margin-top: 0.2em; 
+}
+body > header a:hover {
+    color: #e65c00;
+}
+
 body > header section{
     float: right;
     margin-top: 0.3em;
     margin-right: 1em;
 }
-  body > header input{
-    border: 1px solid #666;
-    padding: 0.4em;
-  }
-  
-  body > header input[type="text"]{
-    width: 10em;
-    border-radius:6px;
-    cursor: text;
-  }
-  
-  body > header input[type="password"]{
-    width: 10em;
-    border-radius:6px;
-    cursor: text;
-  }
-  
-  body > header input[type="submit"]{
-    background-color: white;
-    color: rgb(14, 13, 13);
-    width:7em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    transition-duration: 1s;
-    border-radius: 12px;
-    cursor: pointer;
-  }
+body > header input{
+border: 1px solid #666;
+padding: 0.4em;
+}
 
-  body > header input:hover[type="submit"] {
-      background-color: #0a0a0a;
-      color: rgb(253, 252, 252);
-      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-  }
- /*Página de registro*/
-  #register {
-    width: 20em;
-    margin: 0 auto;
-  }
-  
-  #register form {
-    margin: 0;
-  }
-  
-  #register input {
-    display: block;
-    border: 0;
-    margin: 1em;
-    padding: 1em;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  
-  #register input[type=submit] {
-    background-color: rgb(27, 123, 182);
-    color: white;
-    border-radius: 2em;
-  }
-  #register input:hover[type=submit]{
+body > header input[type="text"]{
+width: 10em;
+border-radius:6px;
+cursor: text;
+}
+
+body > header input[type="password"]{
+width: 10em;
+border-radius:6px;
+cursor: text;
+}
+
+body > header input[type="submit"]{
+background-color: white;
+color: rgb(14, 13, 13);
+width:7em;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+transition-duration: 1s;
+border-radius: 12px;
+cursor: pointer;
+}
+
+body > header input:hover[type="submit"] {
     background-color: #0a0a0a;
     color: rgb(253, 252, 252);
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+/*Página de registro*/
+#register {
+width: 20em;
+margin: 0 auto;
+}
 
-  }
+#register form {
+margin: 0;
+}
 
-<<<<<<< HEAD
-  body > header .username {
-    margin: 1em;
-  }
+#register input {
+display: block;
+border: 0;
+margin: 1em;
+padding: 1em;
+width: 100%;
+box-sizing: border-box;
+}
 
-  /*Mensagens de erro/sucesso*/
-  #messages {
-    width: 40em;
-  }
-  #messages {
-    width: 40em;
+#register input[type=submit] {
+background-color: rgb(27, 123, 182);
+color: white;
+border-radius: 2em;
+margin-top: 1px;
+}
+#register input:hover[type=submit] {
+background-color: #0a0a0a;
+color: rgb(253, 252, 252);
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+body > header .username {
+ color: white;
+ margin-left: -300%;
+ font-size: 19px;
+}
+
+/*Mensagens de erro/sucesso*/
+#messages {
+    width: 60em;
     margin: 0 auto;
+    float: initial;
   }
   
-  #messages div {
+#messages div {
     padding: 1em;  
-    margin-top: 1em;
-    border-radius: 2em;
+    border-radius: 1em;
   }
   
-  #messages .error {
+#messages .error {
     background-color: #F99;
     color: #333;
   }
 
-  #messages .success {
-    background-color: #9F9;
-    color: #333;
+#messages .success {
+    background-color: rgb(57, 102, 57);
+    color: rgb(253, 251, 251);
+    font-family: 'Courier New', Courier, monospace;
   }
-=======
+
 .filmes{
     grid-column: 1 / 4;
     grid-row-start: 3;
@@ -259,4 +270,3 @@ body > header section{
     height: 1%;
     background-color: #404040;
 }
->>>>>>> a299a9126044018d40e3a20eadd50ca1991efa4b

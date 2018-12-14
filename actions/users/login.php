@@ -7,9 +7,9 @@
 
   if (isLoginCorrect($username, $password)) {
     $_SESSION['username'] = $username;
-    $_SESSION['error_messages'][] = 'Login successful';  
+    $_SESSION['success_messages'][] = 'Bem Vindo!';  
   } else {
-    $_SESSION['error_messages'][] = 'Login failed';  
+    $_SESSION['error_messages'][] = 'Ops, ocorreu um erro no login! Tente novamente';  
   }
   header('Location: ' . $_SERVER['HTTP_REFERER']);
 ?>
