@@ -3,8 +3,10 @@
     <head>
         <meta charset="utf-8" />
         
-        <title>Page Title</title>
+        <title>Cinéfilos</title>
         <link rel="stylesheet" type="text/css"  href="{$BASE_URL}/css/style.css">
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script src="{$BASE_URL}/javascript/main.js" Defer></script>
     </head>
 
     <body>
@@ -25,20 +27,18 @@
         </section>
         </div>
         
-        <div class= 'messages'>
         <section id="messages">
-            {if isset($ERROR_MESSAGES)}
-                {foreach $ERROR_MESSAGES as $error}
-                    <div class="error">{$error}</div>
-                {/foreach}
-            {/if}
-            {if isset($SUCCESS_MESSAGES)}
-                {foreach $SUCCESS_MESSAGES as $success}
-                    <div class="success"><img src="../../img/correct.png" height='30px' weight='30px'> {$success}</div>
-                {/foreach}
-            {/if}
+        {if isset($ERROR_MESSAGES)}
+        {foreach $ERROR_MESSAGES as $error}
+        <div class="error">{$error}<a class="close" href="#"><img src="{$BASE_URL}/img/erro.png" height='30px' weight='30px'></a></div>
+        {/foreach}
+        {/if}
+        {if isset($SUCCESS_MESSAGES)}
+        {foreach $SUCCESS_MESSAGES as $success}
+        <div class="success">{$success} <a class="close" href="#"><img src="{$BASE_URL}/img/correct.png" height='30px' weight='30px'></a></div>
+        {/foreach}
+        {/if}
         </section>
-        </div>
         
         
             <div class="main_container">
@@ -50,7 +50,7 @@
                     <div class="menu">
                         <nav>
                             <ul>
-                                <li><a href="#">Em destaque</a></li>
+                                <li><a href="{$BASE_URL}">Em destaque</a></li>
                                 <li><a href="#">Filmes</a></li>
 
                         <!-- Autorizador 

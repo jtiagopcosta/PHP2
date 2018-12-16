@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-12-14 17:21:23
+/* Smarty version 3.1.33, created on 2018-12-16 15:54:15
   from '/usr/users2/2018/up201803231/public_html/trabalhosSiem/newpage/php2/templates/common/header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c13e6936dc1e0_79950236',
+  'unifunc' => 'content_5c1675277864e3_19616222',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b651c099660fa53880f91fcfb8817426a346b4fc' => 
     array (
       0 => '/usr/users2/2018/up201803231/public_html/trabalhosSiem/newpage/php2/templates/common/header.tpl',
-      1 => 1544808046,
+      1 => 1544975650,
       2 => 'file',
     ),
   ),
@@ -22,15 +22,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:common/menu_logged_out.tpl' => 1,
   ),
 ),false)) {
-function content_5c13e6936dc1e0_79950236 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c1675277864e3_19616222 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8" />
         
-        <title>Page Title</title>
+        <title>Cinéfilos</title>
         <link rel="stylesheet" type="text/css"  href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
 /css/style.css">
+        <?php echo '<script'; ?>
+ src="https://code.jquery.com/jquery-2.2.4.min.js"><?php echo '</script'; ?>
+>
+        <?php echo '<script'; ?>
+ src="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+/javascript/main.js" Defer><?php echo '</script'; ?>
+>
     </head>
 
     <body>
@@ -55,36 +62,36 @@ function content_5c13e6936dc1e0_79950236 (Smarty_Internal_Template $_smarty_tpl)
         </section>
         </div>
         
-        <div class= 'messages'>
         <section id="messages">
-            <?php if (isset($_smarty_tpl->tpl_vars['ERROR_MESSAGES']->value)) {?>
-                <?php
+        <?php if (isset($_smarty_tpl->tpl_vars['ERROR_MESSAGES']->value)) {?>
+        <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['ERROR_MESSAGES']->value, 'error');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['error']->value) {
 ?>
-                    <div class="error"><?php echo $_smarty_tpl->tpl_vars['error']->value;?>
-</div>
-                <?php
+        <div class="error"><?php echo $_smarty_tpl->tpl_vars['error']->value;?>
+<a class="close" href="#"><img src="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+/img/erro.png" height='30px' weight='30px'></a></div>
+        <?php
 }
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
-            <?php }?>
-            <?php if (isset($_smarty_tpl->tpl_vars['SUCCESS_MESSAGES']->value)) {?>
-                <?php
+        <?php }?>
+        <?php if (isset($_smarty_tpl->tpl_vars['SUCCESS_MESSAGES']->value)) {?>
+        <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['SUCCESS_MESSAGES']->value, 'success');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['success']->value) {
 ?>
-                    <div class="success"><img src="../../img/correct.png" height='30px' weight='30px'> <?php echo $_smarty_tpl->tpl_vars['success']->value;?>
-</div>
-                <?php
+        <div class="success"><?php echo $_smarty_tpl->tpl_vars['success']->value;?>
+ <a class="close" href="#"><img src="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+/img/correct.png" height='30px' weight='30px'></a></div>
+        <?php
 }
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
-            <?php }?>
+        <?php }?>
         </section>
-        </div>
         
         
             <div class="main_container">
@@ -96,7 +103,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                     <div class="menu">
                         <nav>
                             <ul>
-                                <li><a href="#">Em destaque</a></li>
+                                <li><a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+">Em destaque</a></li>
                                 <li><a href="#">Filmes</a></li>
 
                         <!-- Autorizador 

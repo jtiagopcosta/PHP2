@@ -9,7 +9,7 @@
     $_SESSION['username'] = $username;
     $_SESSION['success_messages'][] = 'Bem Vindo!';  
   } else {
-    $_SESSION['error_messages'][] = 'Ops, ocorreu um erro no login! Tente novamente';  
+    $_SESSION['error_messages'][] = 'Ops, ocorreu um erro no login, favor tentar novamente!';  
   }
   header('Location: ' . $_SERVER['HTTP_REFERER']);
 ?>
