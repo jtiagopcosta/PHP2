@@ -2,8 +2,9 @@
 
 <div class="recent">
  {foreach $filmes as $filme}
-            
+                        <a href="{$BASE_URL}/pages/filmepage.php?id={$filme.id}">
                         <img class="image_recent" src="{$BASE_URL}{$filme.imagem}">
+                        </a>
                         
                     {/foreach}
                     
