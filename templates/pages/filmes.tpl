@@ -6,8 +6,7 @@
         {foreach $filmes as $filme}
             
             <div class="filme">
-            {*<img class="pic" src="{$BASE_DIR}/img/{$filme.imagem}">*}
-            <img class="pic" src="{$BASE_URL}/img/donnie.jpg">
+            <img class="pic" src="{$BASE_URL}{$filme.imagem}">
             <span class="nome"> {$filme.nome}</span><br/>
             <span > {$filme.genero}</span><br/>
             <p><span class="p"> Realizador:</span> {$filme.autor}</p> 
