@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-12-16 15:54:15
+/* Smarty version 3.1.33, created on 2018-12-18 10:46:53
   from '/usr/users2/2018/up201803231/public_html/trabalhosSiem/newpage/php2/templates/common/header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c1675277864e3_19616222',
+  'unifunc' => 'content_5c18d01d4ab598_04434313',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b651c099660fa53880f91fcfb8817426a346b4fc' => 
     array (
       0 => '/usr/users2/2018/up201803231/public_html/trabalhosSiem/newpage/php2/templates/common/header.tpl',
-      1 => 1544975650,
+      1 => 1545130005,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:common/menu_logged_out.tpl' => 1,
   ),
 ),false)) {
-function content_5c1675277864e3_19616222 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c18d01d4ab598_04434313 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html>
     <head>
@@ -69,7 +69,7 @@ $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->t
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['error']->value) {
 ?>
-        <div class="error"><?php echo $_smarty_tpl->tpl_vars['error']->value;?>
+        <div class="error"><a class='erro'><?php echo $_smarty_tpl->tpl_vars['error']->value;?>
 <a class="close" href="#"><img src="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
 /img/erro.png" height='30px' weight='30px'></a></div>
         <?php
@@ -106,6 +106,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                                 <li><a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
 ">Em destaque</a></li>
                                 <li><a href="#">Filmes</a></li>
+                                <li><a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+/pages/inserir.php">Inserir</a></li>
 
                         <!-- Autorizador 
                                 <?php if ($_smarty_tpl->tpl_vars['_SESSION']->value['tipo'] == 'admin') {?>

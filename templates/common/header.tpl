@@ -30,7 +30,7 @@
         <section id="messages">
         {if isset($ERROR_MESSAGES)}
         {foreach $ERROR_MESSAGES as $error}
-        <div class="error">{$error}<a class="close" href="#"><img src="{$BASE_URL}/img/erro.png" height='30px' weight='30px'></a></div>
+        <div class="error"><a class='erro'>{$error}<a class="close" href="#"><img src="{$BASE_URL}/img/erro.png" height='30px' weight='30px'></a></div>
         {/foreach}
         {/if}
         {if isset($SUCCESS_MESSAGES)}
@@ -52,6 +52,7 @@
                             <ul>
                                 <li><a href="{$BASE_URL}">Em destaque</a></li>
                                 <li><a href="#">Filmes</a></li>
+                                <li><a href="{$BASE_URL}/pages/inserir.php">Inserir</a></li>
 
                         <!-- Autorizador 
                                 {if $_SESSION['tipo']=='admin'}

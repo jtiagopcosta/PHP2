@@ -187,7 +187,7 @@ body > header input:hover[type="submit"] {
 
 }
 
-/*Página de registro*/
+/*Página de registro/usuário */
 #register {
 width: 20em;
 margin: 0 auto;
@@ -279,7 +279,7 @@ margin-top: -5px;
     border-radius: 5px;
     padding: 1em;
     overflow: hidden;
-    height: max-content;
+    max-height: 25%;
 }
 
 .filme {
@@ -315,4 +315,48 @@ margin-top: -5px;
 	border-color: #ffffff;
 	border-radius: 4px;
 	margin: 1em;
+}
+
+/*Inserção de filmes*/
+
+#h2 {
+    margin: auto;
+    margin-left: 4em;
+}
+
+#insert {
+width: 20em;
+margin: 0 auto;
+}
+
+#insert form {
+margin: 0;
+}
+
+#insert input {
+display: block;
+border: 0;
+margin: 1em;
+padding: 1em;
+width: 100%;
+box-sizing: border-box;
+}
+
+#insert input[type=submit] {
+background-color: rgb(81, 91, 97);
+color: white;
+border-radius: 2em;
+margin-top: 1px;
+}
+
+#insert input:hover[type=submit] {
+background-color: #0a0a0a;
+color: rgb(253, 252, 252);
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#insert textarea {
+margin-bottom: 10px;
+padding: 2em 0em 0em 12.9em;
+
 }

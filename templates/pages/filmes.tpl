@@ -17,13 +17,21 @@
         {/foreach}
     </div>
     <div class="generos">
-    Lorem ipsum dolor sit ametLit ametLorem ipsum doLit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet
+    Lorem ipsum dolor sit ametefefefefefffffffefefefefefefefefefefeefefefefefefefefefefefefwef
+    gwEGRWGERHRJERHTEURHTJEHTJESBDGXJRTYSZNJRYUERJFYKDRTXNLit ametLorem ipsum doLit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet
     <p>1</p>
     <p>1</p>
     <p>1</p>
     <p>1</p>
     <p>1</p>
     <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>2</p>
+    <input class="submit" type="submit" value="OK" name="pesquisar_genero">
     </div>
 
 </div>
