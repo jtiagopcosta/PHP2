@@ -43,7 +43,7 @@ body{
     align-items: center;
     text-align: center;
     display:grid;
-    grid-template-columns: auto 1fr 8em;
+    grid-template-columns: auto 1fr 13em;
     background-color: #404040;
     margin: 2px;
     border-radius: 5px;
@@ -85,6 +85,8 @@ nav a:hover{
 .search{
     grid-column: 3 / 4;
     grid-row: 1;
+    margin-left: 2em;
+    
 }
 /*fim do menu*/
 .recent{
@@ -279,7 +281,7 @@ margin-top: -5px;
     border-radius: 5px;
     padding: 1em;
     overflow: hidden;
-    max-height: 25%;
+    height: max-content;
 }
 
 .filme {
@@ -357,6 +359,6 @@ box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 
 #insert textarea {
 margin-bottom: 10px;
-padding: 2em 0em 0em 12.9em;
+padding: 2em 0em 0em 14.5em;
 
 }

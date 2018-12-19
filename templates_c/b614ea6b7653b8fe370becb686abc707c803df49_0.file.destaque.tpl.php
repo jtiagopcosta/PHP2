@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-11-30 16:36:06
+/* Smarty version 3.1.33, created on 2018-12-18 13:16:34
   from '/usr/users2/2018/up201803231/public_html/trabalhosSiem/newpage/php2/templates/pages/destaque.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c0166f6f0f888_23191901',
+  'unifunc' => 'content_5c18f332145094_09577210',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b614ea6b7653b8fe370becb686abc707c803df49' => 
     array (
       0 => '/usr/users2/2018/up201803231/public_html/trabalhosSiem/newpage/php2/templates/pages/destaque.tpl',
-      1 => 1543430871,
+      1 => 1545138027,
       2 => 'file',
     ),
   ),
@@ -22,25 +22,29 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:common/footer.tpl' => 1,
   ),
 ),false)) {
-function content_5c0166f6f0f888_23191901 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c18f332145094_09577210 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender('file:common/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
 <div class="recent">
-                    <img class="image_recent" src="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
-/img/lock.jpg">
-                    <img class="image_recent" src="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
-/img/john.jpg">
-                    <img class="image_recent" src="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
-/img/fight.jpg">
-                    <img class="image_recent" src="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
-/img/baby.jpg">
-                    <img class="image_recent" src="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
-/img/pulp.jpg">
-                    <img class="image_recent" src="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
-/img/drive.jpg">
-                    <img class="image_recent" src="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
-/img/donnie.jpg">
+ <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['filmes']->value, 'filme');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['filme']->value) {
+?>
+                        <a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+/pages/filmepage.php?id=<?php echo $_smarty_tpl->tpl_vars['filme']->value['id'];?>
+">
+                        <img class="image_recent" src="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;
+echo $_smarty_tpl->tpl_vars['filme']->value['imagem'];?>
+">
+                        </a>
+                        
+                    <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+                    
 
 </div>
 
