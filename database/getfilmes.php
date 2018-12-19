@@ -7,6 +7,7 @@
     return $stmt->fetchAll();
   }
 
+  /*Retirado a função FetchAll e posto a função Fetch*/
   function getfilmebyid($idfilme) {
     global $conn;
     $stmt = $conn->prepare('SELECT * FROM filmes  
