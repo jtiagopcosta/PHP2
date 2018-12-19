@@ -10,6 +10,12 @@
 
   $_SESSION['success_messages'][] = 'User registered successfully';  
   header("Location: $BASE_URL");
+
+  if (strpos($e->getMessage(), 'users_pkey') !== false) {
+    $_SESSION['error_messages'][] = 'Duplicate username';
+    $_SESSION['field_errors']['username'] = 'Username already exists';
+  }
+  else $_SESSION['error_messages'][] = 'Error creating user';
   
   header('Location: ' . $_SERVER['HTTP_REFERER']);
 ?>

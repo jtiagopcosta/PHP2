@@ -7,7 +7,7 @@
   $idfilme = $_GET['id'];
   if (!isset($_GET['id'])) die('filme missing');
 
-  $filmes= getfilmebyid($idfilme);
-  $smarty->assign('filmes', $filmes);
+  $filme = getfilmebyid($idfilme);
+  $smarty->assign('filme', $filme);
   $smarty->display('pages/filmepage.tpl'); 
 ?>

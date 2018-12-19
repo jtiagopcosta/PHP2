@@ -18,7 +18,8 @@ COM A DB FOI FEITA CORRETAMENTE E AVISAR, SESSÃO DE ADMIN -->
     </div>
     <div class="generos">
     Lorem ipsum dolor sit ametefefefefefffffffefefefefefefefefefefeefefefefefefefefefefefefwef
-    gwEGRWGERHRJERHTEURHTJEHTJESBDGXJRTYSZNJRYUERJFYKDRTXNLit ametLorem ipsum doLit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet
+    gwEGRWGERHRJERHTEURHTJEHTJESBDGXJRTYSZNJRYUERJFYKDRTXNLit ametLorem ipsum do
+    Lit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet
     <p>1</p>
     <p>1</p>
     <p>1</p>

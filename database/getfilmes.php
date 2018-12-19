@@ -12,7 +12,7 @@
     $stmt = $conn->prepare('SELECT * FROM filmes  
                             WHERE id=?');
     $stmt->execute(array($idfilme));
-    return $stmt->fetchAll();
+    return $stmt->fetch();
   }
 
 ?>
