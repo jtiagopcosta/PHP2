@@ -51,9 +51,14 @@
                         <nav>
                             <ul>
                                 <li><a href="{$BASE_URL}">Em destaque</a></li>
+<<<<<<< HEAD
                                 <li><a href="{$BASE_URL}/pages/filmes.php">Filmes</a></li>
                                 <li><a href="{$BASE_URL}/pages/inserir.php">Inserir</a></li>
                                 
+=======
+                                <li><a href="{$BASE_URL}/pages/inserir.php">Inserir</a></li>
+                                <li><a href="{$BASE_URL}/pages/filmes.php">Filmes</a></li>
+>>>>>>> 417e5b41a8329486c2dcb5c0a8891c80539cadc9
 
                         <!-- Autorizador 
                                 {if $_SESSION['tipo']=='admin'}

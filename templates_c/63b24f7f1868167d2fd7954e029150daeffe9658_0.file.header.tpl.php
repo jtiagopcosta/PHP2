@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-12-18 11:06:25
+/* Smarty version 3.1.33, created on 2018-12-18 13:26:00
   from '/usr/users2/mieec2011/ee11287/public_html/trabalhosSiem/trabalhoPHP-2/templates/common/header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c18d4b1546899_37866802',
+  'unifunc' => 'content_5c18f568c7ade6_10031620',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '63b24f7f1868167d2fd7954e029150daeffe9658' => 
     array (
       0 => '/usr/users2/mieec2011/ee11287/public_html/trabalhosSiem/trabalhoPHP-2/templates/common/header.tpl',
-      1 => 1545131179,
+      1 => 1545139548,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:common/menu_logged_out.tpl' => 1,
   ),
 ),false)) {
-function content_5c18d4b1546899_37866802 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c18f568c7ade6_10031620 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html>
     <head>
@@ -69,7 +69,7 @@ $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->t
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['error']->value) {
 ?>
-        <div class="error"><?php echo $_smarty_tpl->tpl_vars['error']->value;?>
+        <div class="error"><a class='erro'><?php echo $_smarty_tpl->tpl_vars['error']->value;?>
 <a class="close" href="#"><img src="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
 /img/erro.png" height='30px' weight='30px'></a></div>
         <?php
@@ -105,6 +105,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                             <ul>
                                 <li><a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
 ">Em destaque</a></li>
+                                <li><a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+/pages/inserir.php">Inserir</a></li>
                                 <li><a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
 /pages/filmes.php">Filmes</a></li>
 
