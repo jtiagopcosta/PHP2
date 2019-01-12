@@ -5,8 +5,9 @@
   $realname = strip_tags($_POST['realname']);
   $username = strip_tags($_POST['username']);
   $password = $_POST['password'];
+  $tipo = $_POST['tipo'];
 
-  createUser($username, $realname, $password);
+  createUser($username, $realname, $password, $tipo);
 
   $_SESSION['success_messages'][] = 'User registered successfully';  
   header("Location: $BASE_URL");

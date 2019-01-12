@@ -9,7 +9,7 @@
 
   if (isLoginAdmin($username, $password, $admin)) {
     $_SESSION['username'] = $username;
-    $_SESSION['success_messages'][] = 'Bem Vindo Sr.!';  
+    $_SESSION['success_messages'][] = 'Tenha um Bom dia !';  
     $_SESSION['administrador'] = $admin; 
     
   }

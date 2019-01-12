@@ -1,9 +1,9 @@
 <?php
 
-  function createUser($username, $realname, $password) {
+  function createUser($username, $realname, $password, $tipo) {
     global $conn;
-    $stmt = $conn->prepare("INSERT INTO users VALUES (DEFAULT, ?, ?, ?)");
-    $stmt->execute(array($username, $realname, sha1($password)));
+    $stmt = $conn->prepare("INSERT INTO users VALUES (DEFAULT, ?, ?, ?, ?)");
+    $stmt->execute(array($username, $realname, sha1($password), $tipo));
   }
 
   function isLoginAdmin($username, $password, $admin) {
@@ -14,7 +14,7 @@
     $stmt->execute(array($username, sha1($password), $admin));
     return $stmt->fetch() == true;
   }
-  
+
   function isLoginUser($username, $password, $user) {
     global $conn;
     $stmt = $conn->prepare("SELECT *

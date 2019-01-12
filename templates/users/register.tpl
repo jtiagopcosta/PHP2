@@ -9,6 +9,18 @@
          value="{if isset($FORM_VALUES)}{$FORM_VALUES.username}{/if}"
          placeholder="Username">
     <input type="password" name="password" value="" placeholder="Password" required></label>
+
+    <h1>Escolha seu tipo de Usuário:</h1>
+    <label class="containerCheck">Comum
+      <input type="radio" checked="checked" name="tipo" value="0">
+      <span class="checkmark"></span>
+    </label>
+    <label class="containerCheck">Administrador
+      <input type="radio" name="tipo" value="1">
+      <span class="checkmark"></span>
+    </label>
+    
+
     <input type="submit" value="Register">
   </form>
 
