@@ -51,12 +51,11 @@
                         <nav>
                             <ul>
                                 <li><a href="{$BASE_URL}">Em destaque</a></li>
-                                <li><a href="{$BASE_URL}/pages/inserir.php">Inserir</a></li>
                                 <li><a href="{$BASE_URL}/pages/filmes.php">Filmes</a></li>
 
                          
                                 {if (isset($ADMINISTRADOR))}
-                                <li><a href="#">Inserir DD</a></li>
+                                <li><a href="{$BASE_URL}/pages/inserir.php">Inserir Filme</a></li>
                                 {/if}
                                 
                             </ul>
