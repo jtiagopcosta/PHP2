@@ -6,12 +6,21 @@
     $stmt->execute(array($username, $realname, sha1($password)));
   }
 
-  function isLoginCorrect($username, $password) {
+  function isLoginAdmin($username, $password, $admin) {
     global $conn;
     $stmt = $conn->prepare("SELECT *
                             FROM users
-                            WHERE username = ? AND password = ?");
-    $stmt->execute(array($username, sha1($password)));
+                            WHERE username = ? AND password = ? AND tipo = ?");
+    $stmt->execute(array($username, sha1($password), $admin));
+    return $stmt->fetch() == true;
+  }
+  
+  function isLoginUser($username, $password, $user) {
+    global $conn;
+    $stmt = $conn->prepare("SELECT *
+                            FROM users
+                            WHERE username = ? AND password = ? AND tipo = ?");
+    $stmt->execute(array($username, sha1($password), $user));
     return $stmt->fetch() == true;
   }
 

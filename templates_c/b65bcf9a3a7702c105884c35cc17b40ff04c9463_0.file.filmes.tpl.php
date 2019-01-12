@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-12-19 11:11:39
+/* Smarty version 3.1.33, created on 2019-01-12 19:05:45
   from '/usr/users2/2018/up201803231/public_html/trabalhosSiem/newpage/php2/templates/pages/filmes.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c1a276b953118_75955125',
+  'unifunc' => 'content_5c3a3a8a014684_73883328',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b65bcf9a3a7702c105884c35cc17b40ff04c9463' => 
     array (
       0 => '/usr/users2/2018/up201803231/public_html/trabalhosSiem/newpage/php2/templates/pages/filmes.tpl',
-      1 => 1545217885,
+      1 => 1545224125,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:common/footer.tpl' => 1,
   ),
 ),false)) {
-function content_5c1a276b953118_75955125 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c3a3a8a014684_73883328 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!--VER CSS DO MENU LATERAL, FILMESPAGE, FILMES, GETFILMES, VERIFICAR SE HÁ MAIS DE UM USERNAME, COMO VER SE A LIGAÇÃO
 COM A DB FOI FEITA CORRETAMENTE E AVISAR, SESSÃO DE ADMIN -->
 <?php $_smarty_tpl->_subTemplateRender('file:common/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
@@ -56,7 +56,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
     </div>
     <div class="generos">
     Lorem ipsum dolor sit ametefefefefefffffffefefefefefefefefefefeefefefefefefefefefefefefwef
-    gwEGRWGERHRJERHTEURHTJEHTJESBDGXJRTYSZNJRYUERJFYKDRTXNLit ametLorem ipsum doLit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet
+    gwEGRWGERHRJERHTEURHTJEHTJESBDGXJRTYSZNJRYUERJFYKDRTXNLit ametLorem ipsum do
+    Lit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet
     <p>1</p>
     <p>1</p>
     <p>1</p>

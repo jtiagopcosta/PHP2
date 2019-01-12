@@ -54,10 +54,10 @@
                                 <li><a href="{$BASE_URL}/pages/inserir.php">Inserir</a></li>
                                 <li><a href="{$BASE_URL}/pages/filmes.php">Filmes</a></li>
 
-                        <!-- Autorizador 
-                                {if $_SESSION['tipo']=='admin'}
-                                <li><a href="#">Inserir</a></li>
-                                {/if}-->
+                         
+                                {if (isset($ADMINISTRADOR))}
+                                <li><a href="#">Inserir DD</a></li>
+                                {/if}
                                 
                             </ul>
                         </nav>
