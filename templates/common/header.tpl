@@ -45,7 +45,7 @@
                 <div class="container">
                     
                     <div class="header">
-                        <a href="{$BASE_URL}"><h1>Cinéfilos</h1></a>
+                        <a href="{$BASE_URL}"><h3>Cinéfilos</h3></a>
                     </div>
                     <div class="menu">
                         <nav>
