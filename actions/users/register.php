@@ -7,17 +7,18 @@
   $password = $_POST['password'];
   $tipo = $_POST['tipo'];
 
-  createUser($username, $realname, $password, $tipo);
+  try {
+    createUser($realname, $username, $password, $tipo);
+  } catch (PDOException $e) {
+    $_SESSION['error_messages'][] = 'Error creating user: ' . $e->getMessage();
+    $_SESSION['form_values'] = $_POST;
+    header('Location: ' . $_SERVER['HTTP_REFERER']);;
+    exit;
+  }
 
   $_SESSION['success_messages'][] = 'User registered successfully';  
   header("Location: $BASE_URL");
   
-  if (!$_POST['username'] || !$_POST['realname'] || !$_POST['password']) {
-    $_SESSION['error_messages'][] = 'All fields are mandatory';
-    $_SESSION['form_values'] = $_POST;
-    header("Location: $BASE_URL" . 'pages/users/register.php');
-    exit;
-  }
   
-  header('Location: ' . $_SERVER['HTTP_REFERER']);
+  
 ?>

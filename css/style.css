@@ -284,6 +284,16 @@ border-radius: 50%;
 background: white;
 }
 
+/*Página de Perfil*/
+
+#nome {
+    display: none;
+    height: max-content;
+    background: #404040;
+    border-radius: 4px;
+    
+}
+
 
 
 /*Mensagens de erro/sucesso*/
