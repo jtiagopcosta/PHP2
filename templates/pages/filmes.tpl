@@ -7,7 +7,8 @@ COM A DB FOI FEITA CORRETAMENTE E AVISAR, SESSÃO DE ADMIN -->
         {foreach $filmes as $filme}
             
             <div class="filme">
-            <img class="pic" src="{$BASE_URL}{$filme.imagem}">
+            <a href="{$BASE_URL}/pages/filmepage.php?id={$filme.id}">
+            <img class="pic" src="{$BASE_URL}{$filme.imagem}"></a>
             <span class="nome"> {$filme.nome}</span><br/>
             <span > {$filme.genero}</span><br/>
             <p><span class="p"> Realizador:</span> {$filme.autor}</p> 

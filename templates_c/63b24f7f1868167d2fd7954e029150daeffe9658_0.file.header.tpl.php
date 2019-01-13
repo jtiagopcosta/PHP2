@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-12-18 13:26:00
+/* Smarty version 3.1.33, created on 2019-01-13 22:20:24
   from '/usr/users2/mieec2011/ee11287/public_html/trabalhosSiem/trabalhoPHP-2/templates/common/header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c18f568c7ade6_10031620',
+  'unifunc' => 'content_5c3bb9a886b0e9_54720199',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '63b24f7f1868167d2fd7954e029150daeffe9658' => 
     array (
       0 => '/usr/users2/mieec2011/ee11287/public_html/trabalhosSiem/trabalhoPHP-2/templates/common/header.tpl',
-      1 => 1545139548,
+      1 => 1547417857,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:common/menu_logged_out.tpl' => 1,
   ),
 ),false)) {
-function content_5c18f568c7ade6_10031620 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c3bb9a886b0e9_54720199 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html>
     <head>
@@ -106,19 +106,19 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                                 <li><a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
 ">Em destaque</a></li>
                                 <li><a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
-/pages/inserir.php">Inserir</a></li>
-                                <li><a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
 /pages/filmes.php">Filmes</a></li>
 
-                        <!-- Autorizador 
-                                <?php if ($_smarty_tpl->tpl_vars['_SESSION']->value['tipo'] == 'admin') {?>
-                                <li><a href="#">Inserir</a></li>
-                                <?php }?>-->
+                         
+                                <?php if ((isset($_smarty_tpl->tpl_vars['ADMINISTRADOR']->value))) {?>
+                                <li><a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+/pages/inserir.php">Inserir Filme</a></li>
+                                <?php }?>
                                 
                             </ul>
                         </nav>
                         <div class="search">
-                            Pesquisa
+                            <form method="POST" action="filmespesquisados.php">
+                            <input type="text" placeholder="Pesquisar" name="pesquisa">
                         </div>
                     </div>
 <?php }
