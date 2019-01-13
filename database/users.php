@@ -24,4 +24,13 @@
     return $stmt->fetch() == true;
   }
 
+  function alterarNome($username) {
+    global $conn;
+    $stmt = $conn->prepare("UPDATE users SET username = '$username'  " );
+    $stmt->execute(array($username));
+  }
+
+
+
+
 ?>

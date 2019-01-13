@@ -5,8 +5,9 @@
   <h2>Perfil de {$USERNAME}</h2>
 
   <span class="username" href='#' onclick="Alterar('nome')">->Alterações</span>
-  <form method="post" id="nome"><input type="text" placeholder="Novo Nome" name="username">
-  <input type="text" placeholder="Nova Senha" name="password"></form>
+  <form method="post" id="nome" action="{$BASE_URL}/actions/users/alterar.php"><input type="text" placeholder="Novo Nome" name="username">
+  <input type="text" placeholder="Nova Senha" name="password">
+  <input type="submit" value="Mudar"></form>
 
 
 </section>
