@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-13 22:20:24
+/* Smarty version 3.1.33, created on 2019-01-13 23:05:30
   from '/usr/users2/mieec2011/ee11287/public_html/trabalhosSiem/trabalhoPHP-2/templates/common/header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c3bb9a886b0e9_54720199',
+  'unifunc' => 'content_5c3bc43a14f354_89687273',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '63b24f7f1868167d2fd7954e029150daeffe9658' => 
     array (
       0 => '/usr/users2/mieec2011/ee11287/public_html/trabalhosSiem/trabalhoPHP-2/templates/common/header.tpl',
-      1 => 1547417857,
+      1 => 1547420727,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:common/menu_logged_out.tpl' => 1,
   ),
 ),false)) {
-function content_5c3bb9a886b0e9_54720199 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c3bc43a14f354_89687273 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html>
     <head>
@@ -98,7 +98,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                 <div class="container">
                     
                     <div class="header">
-                        Cinéfilos
+                        <a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+"><h1>Cinéfilos</h1></a>
                     </div>
                     <div class="menu">
                         <nav>

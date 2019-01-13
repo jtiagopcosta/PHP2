@@ -45,7 +45,7 @@
                 <div class="container">
                     
                     <div class="header">
-                        Cinéfilos
+                        <a href="{$BASE_URL}"><h1>Cinéfilos</h1></a>
                     </div>
                     <div class="menu">
                         <nav>
