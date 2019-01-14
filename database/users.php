@@ -24,11 +24,16 @@
     return $stmt->fetch() == true;
   }
 
-  function alterarNome($username) {
+  function alterarNome($username, $usernameold) {
     global $conn;
-    $stmt = $conn->prepare("UPDATE usuarios SET username = '$username'  " );
-    $stmt->execute(array($username));
-  }
+    $stmt = $conn->prepare("UPDATE usuarios SET username = '".$username."' WHERE username = '".$usernameold."'; " );
+    $stmt->execute(); 
+    }
+
+    function alterarSenha($username, $usernameold) {
+      global $conn;
+      $stmt = $conn->prepare("UPDATE usuarios SET username = '".$username."' WHERE username = '".$usernameold."'; " );
+      $stmt->execute(); 
 
 
 
