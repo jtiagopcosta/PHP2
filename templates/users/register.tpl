@@ -5,18 +5,20 @@
 
   <form action="{$BASE_URL}/actions/users/register.php" method="post">
     <input type="text" name="realname" value="" placeholder="Nome" required></label>
-      <input type="text" name="username"
+    <input type="text" name="username"
          value="{if isset($FORM_VALUES)}{$FORM_VALUES.username}{/if}"
          placeholder="Username">
+    <input type="text" name="email" value="" placeholder="E-mail" required></label>
     <input type="password" name="password" value="" placeholder="Password" required></label>
+    
 
     <h1>Escolha seu tipo de Usuário:</h1>
     <label class="containerCheck">Comum
-      <input type="radio" checked="checked" name="tipo" value="0">
+      <input type="radio" checked="checked" name="nivel" value="0">
       <span class="checkmark"></span>
     </label>
     <label class="containerCheck">Administrador
-      <input type="radio" name="tipo" value="1">
+      <input type="radio" name="nivel" value="1">
       <span class="checkmark"></span>
     </label>
     

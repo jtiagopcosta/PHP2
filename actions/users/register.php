@@ -2,13 +2,14 @@
   include_once('../../common/init.php');
   include_once($BASE_DIR .'/database/users.php');  
 
-  $realname = strip_tags($_POST['realname']);
+  $nome = strip_tags($_POST['realname']);
   $username = strip_tags($_POST['username']);
+  $email = $_POST['email'];
   $password = $_POST['password'];
-  $tipo = $_POST['tipo'];
+  $nivel = $_POST['nivel'];
 
   try {
-    createUser($realname, $username, $password, $tipo);
+    createUser($nome, $username, $email, $password, $nivel);
   } catch (PDOException $e) {
     $_SESSION['error_messages'][] = 'Error creating user: ' . $e->getMessage();
     $_SESSION['form_values'] = $_POST;

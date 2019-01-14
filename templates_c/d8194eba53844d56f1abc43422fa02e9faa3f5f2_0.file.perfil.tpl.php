@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-13 20:07:02
+/* Smarty version 3.1.33, created on 2019-01-14 18:27:30
   from '/usr/users2/2018/up201803231/public_html/trabalhosSiem/newpage/php2/templates/pages/perfil.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c3b9a6632b4f8_77959223',
+  'unifunc' => 'content_5c3cd4927c8fb4_87343039',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd8194eba53844d56f1abc43422fa02e9faa3f5f2' => 
     array (
       0 => '/usr/users2/2018/up201803231/public_html/trabalhosSiem/newpage/php2/templates/pages/perfil.tpl',
-      1 => 1547409975,
+      1 => 1547488582,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:common/footer.tpl' => 1,
   ),
 ),false)) {
-function content_5c3b9a6632b4f8_77959223 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c3cd4927c8fb4_87343039 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender('file:common/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
