@@ -8,7 +8,7 @@ COM A DB FOI FEITA CORRETAMENTE E AVISAR, SESSÃO DE ADMIN -->
             
             <div class="filme">
             <a href="{$BASE_URL}/pages/filmepage.php?id={$filme.id}">
-            <img class="pic" src="{$BASE_URL}{$filme.imagem}"></a>
+            <img class="pic" src="{$filme.imagem}"></a>
             <span class="nome"> {$filme.nome}</span><br/>
             <span > {$filme.genero}</span><br/>
             <p><span class="p"> Realizador:</span> {$filme.autor}</p> 
