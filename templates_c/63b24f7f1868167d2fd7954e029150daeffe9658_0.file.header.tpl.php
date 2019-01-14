@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-13 23:15:46
+/* Smarty version 3.1.33, created on 2019-01-14 01:42:19
   from '/usr/users2/mieec2011/ee11287/public_html/trabalhosSiem/trabalhoPHP-2/templates/common/header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c3bc6a2d68007_51370796',
+  'unifunc' => 'content_5c3be8fba1c685_06153778',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '63b24f7f1868167d2fd7954e029150daeffe9658' => 
     array (
       0 => '/usr/users2/mieec2011/ee11287/public_html/trabalhosSiem/trabalhoPHP-2/templates/common/header.tpl',
-      1 => 1547421328,
+      1 => 1547430135,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:common/menu_logged_out.tpl' => 1,
   ),
 ),false)) {
-function content_5c3bc6a2d68007_51370796 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c3be8fba1c685_06153778 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html>
     <head>
@@ -120,6 +120,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                         <div class="search">
                             <form method="POST" action="filmespesquisados.php">
                             <input type="text" placeholder="Pesquisar" name="pesquisa">
+                            </form>
                         </div>
                     </div>
 <?php }
