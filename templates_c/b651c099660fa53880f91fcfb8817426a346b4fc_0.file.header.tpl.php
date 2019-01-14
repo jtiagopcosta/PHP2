@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-12 19:32:05
+/* Smarty version 3.1.33, created on 2019-01-13 23:51:17
   from '/usr/users2/2018/up201803231/public_html/trabalhosSiem/newpage/php2/templates/common/header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c3a40b5cbea26_82223657',
+  'unifunc' => 'content_5c3bcef5b50e17_26660840',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b651c099660fa53880f91fcfb8817426a346b4fc' => 
     array (
       0 => '/usr/users2/2018/up201803231/public_html/trabalhosSiem/newpage/php2/templates/common/header.tpl',
-      1 => 1547321517,
+      1 => 1547423474,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:common/menu_logged_out.tpl' => 1,
   ),
 ),false)) {
-function content_5c3a40b5cbea26_82223657 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c3bcef5b50e17_26660840 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html>
     <head>
@@ -98,7 +98,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                 <div class="container">
                     
                     <div class="header">
-                        Cinéfilos
+                        <a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+"><h3>Cinéfilos</h3></a>
                     </div>
                     <div class="menu">
                         <nav>
@@ -117,7 +118,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                             </ul>
                         </nav>
                         <div class="search">
-                            <input type="text" placeholder="Pesquisar" name="pesquisa">
+                            <form method="POST" action="filmespesquisados.php">
+                            <input type="text" placeholder="Pesquisar" name="pesquisa"> </form>
                         </div>
                     </div>
 <?php }
