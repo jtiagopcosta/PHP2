@@ -28,12 +28,13 @@
     global $conn;
     $stmt = $conn->prepare("UPDATE usuarios SET username = '".$username."' WHERE username = '".$usernameold."'; " );
     $stmt->execute(); 
-    }
+  }
 
-    function alterarSenha($username, $usernameold) {
-      global $conn;
-      $stmt = $conn->prepare("UPDATE usuarios SET username = '".$username."' WHERE username = '".$usernameold."'; " );
-      $stmt->execute(); 
+  function alterarSenha($Npass, $username) {
+    global $conn;
+    $stmt = $conn->prepare("UPDATE usuarios SET password = '".$Npass."' WHERE username = '".$username."'; " );
+    $stmt->execute(); 
+  }
 
 
 
