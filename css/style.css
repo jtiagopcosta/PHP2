@@ -533,6 +533,12 @@ h3 {
     font-size: 3em;
 }
 
+.generos .titulo{
+    font-weight: bold;
+    color:#e65c00;
+    font-size: 2em;
+}
+
 .analises .nome{
     font-weight: bold;
     color:#3a1b06;

@@ -62,6 +62,11 @@
                         </nav>
                         <div class="search">
                             <form method="POST" action="filmespesquisados.php">
+<<<<<<< HEAD
                             <input type="text" placeholder="Pesquisar" name="pesquisa"> </form>
+=======
+                            <input type="text" placeholder="Pesquisar" name="pesquisa">
+                            </form>
+>>>>>>> 7ac52a98d9a16cd17a3280354411f9d02ebe42f3
                         </div>
                     </div>
