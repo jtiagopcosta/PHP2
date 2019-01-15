@@ -52,6 +52,7 @@
                             <ul>
                                 <li><a href="{$BASE_URL}">Em destaque</a></li>
                                 <li><a href="{$BASE_URL}/pages/filmes.php">Filmes</a></li>
+                                <li><a href="{$BASE_URL}/pages/sobre.php">Sobre</a></li>
 
                          
                                 {if (isset($ADMINISTRADOR))}

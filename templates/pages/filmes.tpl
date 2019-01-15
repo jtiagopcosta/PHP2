@@ -8,7 +8,7 @@ COM A DB FOI FEITA CORRETAMENTE E AVISAR, SESSÃO DE ADMIN -->
             
             <div class="filme">
             <a href="{$BASE_URL}/pages/filmepage.php?id={$filme.id}">
-            <img class="pic" src="{$BASE_URL}{$filme.imagem}"></a>
+            <img class="pic" src="{$filme.imagem}"></a>
             <span class="nome"> {$filme.nome}</span><br/>
             <span > {$filme.genero}</span><br/>
             <p><span class="p"> Realizador:</span> {$filme.autor}</p> 
@@ -17,6 +17,7 @@ COM A DB FOI FEITA CORRETAMENTE E AVISAR, SESSÃO DE ADMIN -->
             </div>
         {/foreach}
     </div>
+    <div class="generoscontainer">
     <div class="generos">
 
         <span class="titulo">Géneros</span>
@@ -28,6 +29,7 @@ COM A DB FOI FEITA CORRETAMENTE E AVISAR, SESSÃO DE ADMIN -->
 
         <input class="submit" type="submit" value="OK" name="pesquisar_genero">
         </form>
+    </div>
     </div>
 
 </div>

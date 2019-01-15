@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-13 22:05:53
+/* Smarty version 3.1.33, created on 2019-01-14 05:20:14
   from '/usr/users2/mieec2011/ee11287/public_html/trabalhosSiem/trabalhoPHP-2/templates/pages/filmepage.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c3bb6415b11c2_93107610',
+  'unifunc' => 'content_5c3c1c0e49e342_47961192',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e03a6ed5e576cc726efacfb9871f76b7865c5f6a' => 
     array (
       0 => '/usr/users2/mieec2011/ee11287/public_html/trabalhosSiem/trabalhoPHP-2/templates/pages/filmepage.tpl',
-      1 => 1547417151,
+      1 => 1547443204,
       2 => 'file',
     ),
   ),
@@ -22,13 +22,12 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:common/footer.tpl' => 1,
   ),
 ),false)) {
-function content_5c3bb6415b11c2_93107610 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c3c1c0e49e342_47961192 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender('file:common/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 <!--Retirado a função Foreach, por ja ter os dados vindo do Fetch por completo-->
 <div class="pagfilme">
-    <img class="imagem_filme" src="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;
-echo $_smarty_tpl->tpl_vars['filme']->value['imagem'];?>
+    <img class="imagem_filme" src="<?php echo $_smarty_tpl->tpl_vars['filme']->value['imagem'];?>
 ">
 
     <div class="dados">
