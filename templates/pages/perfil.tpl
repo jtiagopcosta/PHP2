@@ -3,7 +3,7 @@
 <div class="recent">
 <section id="register">
 
-  <h1>Alterações</h1>
+  <h1>Alterar dados</h1>
   <div><span class="nomeperfil" href='#'>-Nome</span></div>
   <div id="nome"> 
   <span class="fechanome" href='#'><a class = "abat"><img src="{$BASE_URL}/img/teste.png" height='20px' weight='20px'></a></span>

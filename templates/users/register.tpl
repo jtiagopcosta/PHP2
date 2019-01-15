@@ -1,7 +1,7 @@
 {include file='common/header.tpl'}
 <div class="recent">
 <section id="register">
-  <h2>Register</h2>
+  <h2>Registar</h2>
 
   <form action="{$BASE_URL}/actions/users/register.php" method="post">
     <input type="text" name="realname" value="" placeholder="Nome" required></label>
@@ -23,7 +23,7 @@
     </label>
     
 
-    <input type="submit" value="Register">
+    <input type="submit" value="Registar">
   </form>
 
 </section>

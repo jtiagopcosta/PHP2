@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-14 21:20:57
+/* Smarty version 3.1.33, created on 2019-01-15 04:26:28
   from '/usr/users2/mieec2011/ee11287/public_html/trabalhosSiem/trabalhoPHP-2/templates/common/header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c3cfd397a6cc5_67482591',
+  'unifunc' => 'content_5c3d60f4b89534_87831292',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '63b24f7f1868167d2fd7954e029150daeffe9658' => 
     array (
       0 => '/usr/users2/mieec2011/ee11287/public_html/trabalhosSiem/trabalhoPHP-2/templates/common/header.tpl',
-      1 => 1547500845,
+      1 => 1547526371,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:common/menu_logged_out.tpl' => 1,
   ),
 ),false)) {
-function content_5c3cfd397a6cc5_67482591 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c3d60f4b89534_87831292 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html>
     <head>
@@ -56,7 +56,7 @@ function content_5c3cfd397a6cc5_67482591 (Smarty_Internal_Template $_smarty_tpl)
                 <input type="password" placeholder="password" name="password">
                 <input type="submit" value="Login">            
                 <a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
-/pages/users/register.php">Register</a>
+/pages/users/register.php">Registar</a>
                 </form>
         <?php }?>
         </section>

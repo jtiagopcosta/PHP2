@@ -21,7 +21,7 @@
                 <input type="text" placeholder="username" name="username">
                 <input type="password" placeholder="password" name="password">
                 <input type="submit" value="Login">            
-                <a href="{$BASE_URL}/pages/users/register.php">Register</a>
+                <a href="{$BASE_URL}/pages/users/register.php">Registar</a>
                 </form>
         {/if}
         </section>
