@@ -1,24 +1,33 @@
+/*mensagens de erro/ok*/
 $('.close').click(function() {
 $(this).parent().fadeOut(1000);
 });
 
 
-function mostrar(elemento){
-    var display = document.getElementById(elemento).style.display;
-    
-      if(display == "none"){
-          document.getElementById(elemento).style.display = 'block';
-      }else{
-          document.getElementById(elemento).style.display = 'none';
-      }    
-  }
+/* aba para abertura de logout*/
+$('.username').click(function() {
+    $("#logout").fadeIn(1000);
+    });
 
-function Alterar(elemento){
-var display = document.getElementById(elemento).style.display;
+$('.logout').click(function() {
+    $("#logout").fadeOut(1000);
+    });
 
-    if(display == "none"){
-        document.getElementById(elemento).style.display = 'block';
-    }else{
-        document.getElementById(elemento).style.display = 'none';
-    }    
-}
+/* configurações*/
+
+$('.nomeperfil').click(function() {
+    $("#nome").fadeIn(1000);
+    });
+
+$('.fechanome').click(function() {
+    $("#nome").fadeOut(1000);
+    });
+
+
+$('.senhaperfil').click(function() {
+    $("#senha").fadeIn(1000);
+    });
+
+$('.fechasenha').click(function() {
+    $("#senha").fadeOut(1000);
+    });
