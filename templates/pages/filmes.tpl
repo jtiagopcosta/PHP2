@@ -17,6 +17,7 @@ COM A DB FOI FEITA CORRETAMENTE E AVISAR, SESSÃO DE ADMIN -->
             </div>
         {/foreach}
     </div>
+    <div class="generoscontainer">
     <div class="generos">
 
         <span class="titulo">Géneros</span>
@@ -28,6 +29,7 @@ COM A DB FOI FEITA CORRETAMENTE E AVISAR, SESSÃO DE ADMIN -->
 
         <input class="submit" type="submit" value="OK" name="pesquisar_genero">
         </form>
+    </div>
     </div>
 
 </div>

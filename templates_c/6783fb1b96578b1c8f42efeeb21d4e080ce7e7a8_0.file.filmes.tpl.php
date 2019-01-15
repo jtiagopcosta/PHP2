@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-14 05:06:44
+/* Smarty version 3.1.33, created on 2019-01-15 00:46:29
   from '/usr/users2/mieec2011/ee11287/public_html/trabalhosSiem/trabalhoPHP-2/templates/pages/filmes.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c3c18e4cd93f3_80055380',
+  'unifunc' => 'content_5c3d2d65781384_08260115',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6783fb1b96578b1c8f42efeeb21d4e080ce7e7a8' => 
     array (
       0 => '/usr/users2/mieec2011/ee11287/public_html/trabalhosSiem/trabalhoPHP-2/templates/pages/filmes.tpl',
-      1 => 1547442378,
+      1 => 1547513187,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:common/footer.tpl' => 1,
   ),
 ),false)) {
-function content_5c3c18e4cd93f3_80055380 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c3d2d65781384_08260115 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!--VER CSS DO MENU LATERAL, FILMESPAGE, FILMES, GETFILMES, VERIFICAR SE HÁ MAIS DE UM USERNAME, COMO VER SE A LIGAÇÃO
 COM A DB FOI FEITA CORRETAMENTE E AVISAR, SESSÃO DE ADMIN -->
 <?php $_smarty_tpl->_subTemplateRender('file:common/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
@@ -56,6 +56,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['filme']->value) {
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
     </div>
+    <div class="generoscontainer">
     <div class="generos">
 
         <span class="titulo">Géneros</span>
@@ -76,6 +77,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 
         <input class="submit" type="submit" value="OK" name="pesquisar_genero">
         </form>
+    </div>
     </div>
 
 </div>
