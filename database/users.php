@@ -34,8 +34,5 @@
       global $conn;
       $stmt = $conn->prepare("UPDATE usuarios SET username = '".$username."' WHERE username = '".$usernameold."'; " );
       $stmt->execute(); 
-
-
-
-
+    }
 ?>

@@ -52,6 +52,7 @@
                             <ul>
                                 <li><a href="{$BASE_URL}">Em destaque</a></li>
                                 <li><a href="{$BASE_URL}/pages/filmes.php">Filmes</a></li>
+                                <li><a href="{$BASE_URL}/pages/sobre.php">Sobre</a></li>
 
                          
                                 {if (isset($ADMINISTRADOR))}
@@ -62,11 +63,7 @@
                         </nav>
                         <div class="search">
                             <form method="POST" action="filmespesquisados.php">
-<<<<<<< HEAD
-                            <input type="text" placeholder="Pesquisar" name="pesquisa"> </form>
-=======
                             <input type="text" placeholder="Pesquisar" name="pesquisa">
                             </form>
->>>>>>> 7ac52a98d9a16cd17a3280354411f9d02ebe42f3
                         </div>
                     </div>
