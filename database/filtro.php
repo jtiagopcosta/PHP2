@@ -1,12 +1,10 @@
 <?php 
-    function get_filmes_filtrados($generos){
+    function get_filmes_filtrados($genero){
         global $conn;
-        foreach($generos as $genero){
         $stmt = $conn->prepare("SELECT * FROM filmes 
                                 WHERE genero 
                                 LIKE '%$genero%'");
         $stmt->execute();
-        }
         return $stmt->fetchAll();
         
     }

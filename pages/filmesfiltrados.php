@@ -5,17 +5,18 @@
   include_once($BASE_DIR . '/database/getfilmes.php');
   include_once($BASE_DIR . '/pages/generos.php');
 
-  $filmes= getfilmes();
+  $allfilmes= getfilmes();
   
-  $input= generos($filmes);
+  $input = generos($allfilmes);
  
   
   $generos = $_POST['genero'];
+  foreach($generos as $genero){
+    $filmes = get_filmes_filtrados($genero);
+  }
 
-  $filmesfiltrados= get_filmes_filtrados($generos);
-
-
+  
   $smarty->assign('input', $input);
-  $smarty->assign('filmes', $filmesfiltrados);
+  $smarty->assign('filmes', $filmes);
   $smarty->display('pages/filmes.tpl'); 
 ?>

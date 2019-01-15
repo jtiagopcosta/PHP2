@@ -8,11 +8,11 @@
     return $stmt->fetchAll();
   }
 
- /* function getdados($id) {
+ function getuserinfo($idusuario) {
     global $conn;
     $stmt = $conn->prepare('SELECT * FROM usuarios 
                             WHERE id=?');
-    $stmt->execute(array($id));
+    $stmt->execute(array($idusuario));
     return $stmt->fetch();
-  }*/
+  }
 ?>

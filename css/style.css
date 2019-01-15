@@ -116,7 +116,7 @@ nav a:hover{
     grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end: 4;
-    background-color: rgb(67, 15, 102);
+    background-color: #404040;
     color: black;
     text-align: center;
     margin: 2px;
@@ -407,8 +407,8 @@ margin-top: -5px;
 
 
 .filme .pic {
-    width:20%;
-	height: auto;
+    width: 10em;
+    height: 15em;
 	float: left;
 	border-style: groove;
 	border-width: 2px;
@@ -599,3 +599,17 @@ h3 {
     width:20%;
     height: auto;
 }
+
+.delete  {
+    color: red;
+}
+.delete:hover {
+    color: red;
+}
+
+
+
+.tit{
+    color: white;
+}
+

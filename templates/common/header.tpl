@@ -9,8 +9,8 @@
         <script src="{$BASE_URL}/javascript/main.js" Defer></script>
     </head>
 
-    <body>
-    <header>            
+    <body>           
+    <header>
         <div class='top'>
         <section id="login">
         {if isset($USERNAME)}
@@ -26,7 +26,7 @@
         {/if}
         </section>
         </div>
-        
+ 
         <section id="messages">
         {if isset($ERROR_MESSAGES)}
         {foreach $ERROR_MESSAGES as $error}
@@ -39,13 +39,13 @@
         {/foreach}
         {/if}
         </section>
-        
+    
         
             <div class="main_container">
                 <div class="container">
                     
                     <div class="header">
-                        <a href="{$BASE_URL}"><h3>Cinéfilos</h3></a>
+                        <a class="tit" href="{$BASE_URL}" style='text-decoration: none';><h3>Cinéfilos</h3></a>
                     </div>
                     <div class="menu">
                         <nav>
@@ -67,3 +67,4 @@
                             </form>
                         </div>
                     </div>
+    

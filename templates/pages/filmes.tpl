@@ -13,7 +13,9 @@ COM A DB FOI FEITA CORRETAMENTE E AVISAR, SESSÃO DE ADMIN -->
             <span > {$filme.genero}</span><br/>
             <p><span class="p"> Realizador:</span> {$filme.autor}</p> 
             <p><span class="p"> Elenco:</span> {$filme.elenco}<p>
-           {*<p><span class="p"> Descrição:</span> <span class="texto">{$filme.descricao}</span></p>*}
+            {if (isset($ADMINISTRADOR))}
+            <a class='delete' href='{$BASE_URL}/database/deletefilme.php?id={$filme.id}'>Eliminar Filme</a>
+            {/if}
             </div>
         {/foreach}
     </div>
@@ -24,7 +26,7 @@ COM A DB FOI FEITA CORRETAMENTE E AVISAR, SESSÃO DE ADMIN -->
         <form action="filmesfiltrados.php" method = "post"> 
 
             {foreach $input as $genero}
-            <input type="checkbox" name="genero[]" id="genero" value={$genero}/> {$genero} <br>
+            <input type="checkbox" name="genero[]" id="genero" value={$genero}> {$genero} <br>
             {/foreach}
 
         <input class="submit" type="submit" value="OK" name="pesquisar_genero">

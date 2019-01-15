@@ -15,19 +15,21 @@
         <span class="nome"> Análises</span>
         </div>
         <div class="analisesbody">
+            {if isset($USERNAME)}
             <div class="introduzir">
-				<form class="form" action="database/upanalise.php" method="post" enctype="multipart/form-data">
+				<form class="form" action="{$BASE_URL}/database/upanalise.php" method="post" enctype="multipart/form-data">
 				<input type="hidden"  name="id" value="$_GET['id']">
 				<input type="hidden"  name="id2" value="<$_SESSION['id']">
+                <input type="hidden"  name="user" value="<$_SESSION['username']">
 				<textarea name="mensagem" class="analisetext" placeholder="Escreva aqui a sua análise" value="descrição" required></textarea><br>
-				<input type="submit" value="Adicionar Análise" name="submit"><br><br><br>
+				<input type="submit" value="Submeter" name="submit"><br><br><br>
 				</form>	
             </div>
+            {/if}
 
             {foreach $analises as $analise}
                 <img class="userpic" src="{$BASE_URL}/img/john">
                 <div class="analise">
-                
                 <span > {$analise.analise}</span><br/>
                 
                 </div>

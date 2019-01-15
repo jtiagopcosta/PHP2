@@ -1,5 +1,6 @@
             <div class="foot">
-                                oito
+                                Utilizador: admin<br>
+                                Pass: admin
             </div>
         </div>
     </div>

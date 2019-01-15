@@ -14,7 +14,7 @@
     exit;
   }
 
-  $_SESSION['success_messages'][] = 'Favor, fazer login novamente para que as alterações sejam feitas !';  
+  $_SESSION['success_messages'][] = 'Por favor, fazer login novamente para que as alterações sejam feitas !';  
   header("Location: $BASE_URL");
   exit;
   
